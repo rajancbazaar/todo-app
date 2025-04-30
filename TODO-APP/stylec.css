@@ -1,0 +1,36 @@
+
+
+
+#zoya-chat-container .Darban_search img {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: transform 0.2s, box-shadow 0.3s;
+    animation: fadeIn 0.3s ease-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+#zoya-chat-container .header-chat {
+    display: flex !important;
+    align-items: center !important;
+    background: #FF0099 !important;
+    border-radius: 1.25rem 1.25rem 0 0;
+    position: relative;
+    z-index: 2 !important;
+    justify-content: space-between;
+    padding: 1.2rem 1rem !important;
+    flex: 0 0 auto !important;
+    color: white !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+

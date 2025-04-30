@@ -1,0 +1,5 @@
+.layout1 {
+    display: grid;
+    height: 100vh; /* Full viewport height to visualize the centering */
+    place-items: center;
+}

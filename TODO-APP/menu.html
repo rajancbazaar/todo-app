@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>தமிழ் பட்டியல் (Tamil List)</title>
+    <style>
+        ul { list-style-type: none; padding: 0; }
+        li { padding: 10px; border: 1px solid #333; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <button id="addItem">புதிய உருப்படி சேர்</button>
+    <ul id="itemList">
+        <li>உருப்படி 1</li>
+        <li>உருப்படி 2</li>
+        <li>உருப்படி 3</li>
+    </ul>
+
+    <script>
+        // 🟢 Event Delegation: <ul> இல் Event Listener சேர்த்தல்
+        document.getElementById("itemList").addEventListener("click", function(event) {
+            if (event.target.tagName === "LI") {
+                event.target.style.backgroundColor = "lightblue"; // கிளிக் செய்தால் நிறம் மாறும்
+            }
+        });
+
+        // 🔵 புதிய உருப்படிகளை சேர்ப்பதற்கான நிகழ்வு (Event)
+        document.getElementById("addItem").addEventListener("click", function() {
+            let newItem = document.createElement("li");
+            newItem.textContent = "புதிய உருப்படி";
+            document.getElementById("itemList").appendChild(newItem);
+        });
+    </script>
+
+</body>
+</html>

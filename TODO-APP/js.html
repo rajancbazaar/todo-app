@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Class Hover</title>
+    <style>
+        .hover-element {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: background-color 0.3s;
+        }
+
+        .hover-element.hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover-element"></div>
+
+    <script>
+        const element = document.querySelector('.hover-element');
+
+        element.addEventListener('mouseover', () => {
+            element.classList.add('hover');
+        });
+
+        element.addEventListener('mouseout', () => {
+            element.classList.remove('hover');
+        });
+    </script>
+</body>
+</html>

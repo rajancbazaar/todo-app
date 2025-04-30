@@ -1,0 +1,9 @@
+body {background-color: azure}
+
+.task { border:2px dotted green; cursor:pointer; padding:10px}
+
+.completed {
+    border-color:red;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
